@@ -7,7 +7,8 @@ const GlobalStyles = createGlobalStyle`
   html, body, #root {
     width: 100%;
     margin: 0;
-    background: ${colors?.primaryDark};
+    padding: 0;
+    background: ${colors?.neutralDark};
     color: ${colors?.neutral};
     display: flex;
     flex-direction: column;

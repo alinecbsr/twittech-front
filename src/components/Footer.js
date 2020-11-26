@@ -1,36 +1,36 @@
-import React from "react";
-import { FiArrowUp } from 'react-icons/fi';
-
-import { Context } from "../assets/styles/typography";
-import {
-  ContentFooter,
-  Logo,
-  List,
-  Item,
-  Pipe,
-  BtnScroll,
-} from "../assets/styles/components/footer";
-
+import React from 'react';
 import logo from "../assets/images/logo.svg";
 
-function Header() {
+import {
+  Tag,
+  Logo,
+  Details,
+  MenuList,
+  MenuItem,
+  MenuItemLink,
+} from '../assets/styles/components/footer';
+
+export default function Footer() {
   return (
-    <ContentFooter>
-      <Context>
-        <Logo src={logo} alt="Logo Twittech" />
-        <List>
-          <Item>Termos e condições</Item>
-          <Pipe>|</Pipe>
-          <Item>Política de privacidade</Item>
-          <Pipe>|</Pipe>
-          <Item>Código de conduta</Item>
-        </List>
-        <BtnScroll>
-        <FiArrowUp size={24} color="#E3E829" />
-        </BtnScroll>
-      </Context>
-    </ContentFooter>
+    <Tag>
+      <div className="do-logo">
+        <MenuItemLink href="#home">
+          <Logo src={logo} alt="Twittech Logo" />
+        </MenuItemLink>
+      </div>
+      <Details>
+        <MenuList>
+            <MenuItem>
+              <MenuItemLink>Termos e condições </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink>Política de privacidade</MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink>Código de conduta</MenuItemLink>
+            </MenuItem>
+        </MenuList>
+      </Details>
+    </Tag>
   );
 }
-
-export default Header;
