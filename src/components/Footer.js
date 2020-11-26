@@ -1,7 +1,7 @@
 import React from "react";
 import { FiArrowUp } from 'react-icons/fi';
 
-import { Context } from "../assets/styles/components/header";
+import { Context } from "../assets/styles/typography";
 import {
   ContentFooter,
   Logo,

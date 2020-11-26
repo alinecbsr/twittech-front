@@ -22,6 +22,12 @@ export const Container = styled.section`
   padding: 0 2.5rem;
 `;
 
+export const Context = styled(Container)`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 export const Nav = styled.section`
   display: flex;
   flex-direction: row;
@@ -68,6 +74,8 @@ export const Btn = styled.button`
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  max-width: 6.25rem;
+  height: 2.75rem;
   margin: 0;
   padding: 0.88rem 1.5rem;
   color: ${colors?.primaryDark};
@@ -83,5 +91,9 @@ export const Btn = styled.button`
   &:hover {
     background-color: ${colors?.primaryDark};
     color: ${colors?.primary};
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
   }
 `;
