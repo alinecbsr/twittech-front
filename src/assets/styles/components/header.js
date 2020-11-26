@@ -118,7 +118,6 @@ export const ListItemLogin = styled(ListItem)`
 
 export const ListLink = styled.a`
   text-decoration: none;
-  
   font-size: 1.2rem;
   cursor: pointer;
   color: ${colors.neutralLight};

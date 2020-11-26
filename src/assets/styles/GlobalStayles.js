@@ -27,6 +27,10 @@ const GlobalStyles = createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
+
+  a {
+  text-decoration: none;
+  }
 `;
 
 export default GlobalStyles;

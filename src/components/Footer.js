@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 
 import {
@@ -8,7 +9,7 @@ import {
   MenuList,
   MenuItem,
   MenuItemLink,
-} from '../assets/styles/components/footer';
+} from "../assets/styles/components/footer";
 
 export default function Footer() {
   return (
@@ -20,15 +21,21 @@ export default function Footer() {
       </div>
       <Details>
         <MenuList>
-            <MenuItem>
+          <MenuItem>
+            <Link to="/terms">
               <MenuItemLink>Termos e condições </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/privacy">
               <MenuItemLink>Política de privacidade</MenuItemLink>
-            </MenuItem>
-            <MenuItem>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/conduct">
               <MenuItemLink>Código de conduta</MenuItemLink>
-            </MenuItem>
+            </Link>
+          </MenuItem>
         </MenuList>
       </Details>
     </Tag>
