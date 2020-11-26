@@ -15,7 +15,7 @@ export const Tag = styled.footer`
   @media (max-width: 600px) {
     flex-direction: column;
     height: 130px;
-    margin-top: 80px;
+    margin-top: 30px;
     padding: 32px 0;
   }
 `;
