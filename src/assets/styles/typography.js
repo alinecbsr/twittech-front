@@ -15,12 +15,22 @@ export const Content = styled.section`
   height: auto;
 `;
 
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+`;
+
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 63.75rem;
   height: auto;
+  min-height: 91vh;
   padding: 0 2.5rem;
 `;
 
@@ -63,6 +73,11 @@ export const Title = styled.h1`
   font-size: 3rem;
   line-height: 3.25rem;
   letter-spacing: 0.01em;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
 `;
 
 export const Logo = styled.img`
@@ -100,3 +115,18 @@ export const Btn = styled.button`
   }
 `;
 
+export const Text = styled.p`
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: ${colors?.neutralLight};
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.01em; 
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+`;

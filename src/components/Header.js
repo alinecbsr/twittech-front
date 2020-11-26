@@ -32,7 +32,11 @@ export default function Header() {
         <Nav menuVisibility={menuVisibility}>
           <NavList menuVisibility={menuVisibility}>
             <ListItem>
-              <ListLink onClick={() => setMenuVisibility(false)}>Home</ListLink>
+              <Link to="/">
+                <ListLink onClick={() => setMenuVisibility(false)}>
+                  Home
+                </ListLink>
+              </Link>
             </ListItem>
             <ListItem>
               <Link to="/about">
