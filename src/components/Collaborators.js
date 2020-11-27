@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import team from "../data/team";
+import Tags from "../components/Tags";
+
 import Linkedin from "../assets/images/linkedin.svg";
 import GitHub from "../assets/images/github.svg";
 
@@ -8,15 +11,18 @@ import {
   Card,
   Photo,
   Name,
-  Participation,
+  Occupation,
   Description,
   SocialContext,
   Social,
   Icon,
+  TagContainer,
 } from "../assets/styles/pages/Contact";
 
 
 const Collaborators = props => {
+  const [index] = useState(0);
+
   const data = props.data || null;
 
   return (
@@ -27,8 +33,13 @@ const Collaborators = props => {
             <Card key={Math.random()}>
               <Photo src={user.photo} alt={user.name} />
               <Name>{user.name}</Name>
-              <Participation>Director</Participation>
+              <Occupation>{user.occupation}</Occupation>
               <Description>{user.description}</Description>
+
+              <TagContainer>
+        <Tags data={team[index].data} />
+      </TagContainer>
+
               <SocialContext>
                 <Social href={user.gitHub} target="_blank">
                   <Icon src={GitHub} alt="Icon GitHub" />

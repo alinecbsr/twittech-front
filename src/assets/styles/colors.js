@@ -1,6 +1,9 @@
 export const colors = {
   neutral: '#FFFFFF',
   neutralDark: '#121214',
+  neutralDarker: '#2B2A2A',
+  neutralDarkLight: '#1B1B1F',
+
   neutralLight: '#A8A8B3',
 
   primary: '#E3E829',
