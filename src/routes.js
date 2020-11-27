@@ -8,6 +8,8 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Dashboard from "./pages/Dashboard";
+
 
 function Routes() {
   return (
@@ -20,6 +22,7 @@ function Routes() {
         <Route path="/conduct" component={Conduct} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
+        <Route path="/dashboard" component={Dashboard} />
       </Switch>
     </BrowserRouter>
   );

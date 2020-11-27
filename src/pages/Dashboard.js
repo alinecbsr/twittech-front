@@ -10,7 +10,7 @@ import {
   Epigraph,
 } from "../assets/styles/pages/Contact";
 
-const Contact = () => {
+const Dashboard = () => {
   const [index] = useState(0);
 
   return (
@@ -18,8 +18,7 @@ const Contact = () => {
       <Header />
       <BoxEpigraph>
         <Epigraph>
-          {`Feito por desenvolvedores  para 
-mentoria & colaboração.`}
+          {`Aqui pesquisa de mentores... Em construção`}
         </Epigraph>
       </BoxEpigraph>
       <TeamContainer>
@@ -30,4 +29,4 @@ mentoria & colaboração.`}
   );
 };
 
-export default Contact;
+export default Dashboard;
