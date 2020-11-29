@@ -25,7 +25,7 @@ from{
 export const HeaderStyle = styled.header`
   position: fixed;
   width: 100%;
-  height: 116px;
+  height: 90px;
   background-color: ${props =>
     props.scroll > 0 ? '#1212149a' : colors.neutralDark};
 

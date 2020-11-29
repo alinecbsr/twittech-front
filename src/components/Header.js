@@ -17,14 +17,14 @@ import {
   ToggleOne,
   ToggleTwo,
   ToggleThree,
-} from "../assets/styles/components/header";
+} from "../assets/styles/components/header"
 
 export default function Header() {
   const [menuVisibility, setMenuVisibility] = useState(false);
 
   return (
     <HeaderStyle>
-      <Container>
+       <Container>
         <LogoLink>
           <Logo src={logo} alt="Twittech logo" />
         </LogoLink>
@@ -74,6 +74,6 @@ export default function Header() {
           <ToggleThree menuVisibility={menuVisibility} />
         </MenuToggle>
       </Container>
-    </HeaderStyle>
+    </HeaderStyle> 
   );
 }

@@ -1,6 +1,6 @@
-import styled from 'styled-components/macro';
-import { Title, Text } from '../typography';
-import { colors } from '../colors';
+import styled from "styled-components/macro";
+import { Title, Text } from "../typography";
+import { colors } from "../colors";
 
 export const Epigraph = styled(Title)`
   text-align: center;
@@ -15,7 +15,7 @@ export const Epigraph = styled(Title)`
   }
 
   @media (max-width: 600px) {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
     font-size: 1.5rem;
     max-width: 80%;
     line-height: 1.8rem;
@@ -64,6 +64,11 @@ export const Photo = styled.img`
   height: 11.3rem;
   border-radius: 50%;
   margin-top: -5rem;
+
+  @media (max-width: 475px) {
+    width: 7.3rem;
+    height: 7.3rem;
+  }
 `;
 
 export const Name = styled.h3`
@@ -92,13 +97,12 @@ export const Description = styled(Text)`
   line-height: 1rem;
   font-weight: 400;
   letter-spacing: 0.5px;
-  margin: 2rem 1rem 3rem 1rem;
-  padding: 0 1rem;
+  margin: 2rem 0 0 0;
+  padding: 0 1rem 1rem 1rem;
   text-align: center;
 
   @media (max-width: 419px) {
-    margin: 2rem 1rem 3rem 1rem;
-    padding: 0;
+    margin: 0.8rem 0 0 0;
   }
 `;
 
@@ -113,8 +117,6 @@ export const SocialContext = styled.div`
   background-color: ${colors.neutralDarkLight};
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-
-
 `;
 
 export const Social = styled.a`
@@ -153,30 +155,32 @@ export const TagContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: auto;
-  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  width: 95%;
+  max-width: 410px;
   padding: 0;
-  margin: 0 0 2rem 0;
+  margin: 0 0 5rem 0;
+
+  @media (max-width: 475px) {
+    max-height: 180px;
+    margin: 0 0 2rem 0;
+  }
 `;
 
 export const Tags = styled.span`
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
-  width: 100%;
-  padding: 0;
-  margin: 0; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-gap: 8px 10px;
   justify-items: center;
   align-items: center;
-  grid-gap: 8px 4px;
+  text-align: center;
   width: 100%;
-  margin: 6rem auto 0 auto;
-  
+  margin: 3rem auto 0 auto;
+
+  @media (max-width: 475px) {
+    margin: 1rem auto 0 auto;
+  }
 `;
 
 export const Tag = styled.span`
@@ -185,26 +189,21 @@ export const Tag = styled.span`
   justify-content: center;
   align-items: center;
   color: ${colors.primary};
-  width: auto;
-  height: 1.5rem;
+  width: 105%;
+  height: 2rem;
   padding: 0;
   background-color: ${colors.neutralDarker};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
-
-  @media (max-width: 600px) {
-    max-width: 80%;
-  }
 `;
 
 export const TagDescription = styled(Text)`
-  margin: 0;
   color: ${colors.primary};
   font-size: 0.725rem;
   line-height: 0.8rem;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1px;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 0.2rem;
   text-align: center;
 `;

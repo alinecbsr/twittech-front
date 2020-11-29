@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import team from "../data/team";
-import Tags from "../components/Tags";
-
+import React from "react";
 import Linkedin from "../assets/images/linkedin.svg";
 import GitHub from "../assets/images/github.svg";
 
@@ -17,13 +14,21 @@ import {
   Social,
   Icon,
   TagContainer,
+  Tags,
+  Tag,
+  TagDescription,
 } from "../assets/styles/pages/Contact";
 
-
-const Collaborators = props => {
-  const [index] = useState(0);
+const Collaborators = (props) => {
 
   const data = props.data || null;
+  const renderTags = (dataTags) => {
+    return dataTags.map((t) => (
+        <Tag key={Math.random()}>
+          <TagDescription>{t}</TagDescription>
+        </Tag>
+      ))
+  }
 
   return (
     <CardContainer>
@@ -35,11 +40,11 @@ const Collaborators = props => {
               <Name>{user.name}</Name>
               <Occupation>{user.occupation}</Occupation>
               <Description>{user.description}</Description>
-
               <TagContainer>
-        <Tags data={team[index].data} />
-      </TagContainer>
-
+                <Tags>
+                {renderTags(user.tagDescription)}
+                </Tags>
+              </TagContainer>
               <SocialContext>
                 <Social href={user.gitHub} target="_blank">
                   <Icon src={GitHub} alt="Icon GitHub" />
