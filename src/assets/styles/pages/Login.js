@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import { colors } from '../colors';
 
-import { Main, Title} from '../typography';
+import { Main, Title, Text } from '../typography';
 
 export const LoginContainer = styled.div`
   display: flex;
@@ -98,4 +98,15 @@ export const Return = styled.img`
   height: auto;
   max-width: 1rem;
   margin: 0 0.5rem 0 0;
+`;
+
+export const RecoverDescription = styled(Text)`
+  text-align: justify;
+  color: ${colors.neutral};
+  line-height: 1.5rem;
+  padding: 0 0 2rem 0;
+`;
+
+export const LoginBox = styled(BoxLogin)`
+  margin: 4rem 0 0 0;
 `;
