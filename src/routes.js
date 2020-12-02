@@ -9,7 +9,8 @@ import Login from "./pages/Login";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Dashboard from "./pages/Dashboard";
-
+import Recover from "./pages/Recover";
+import Register from "./pages/Register";
 
 function Routes() {
   return (
@@ -23,6 +24,8 @@ function Routes() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/recover" component={Recover} />
+        <Route path="/register" component={Register} />
       </Switch>
     </BrowserRouter>
   );
