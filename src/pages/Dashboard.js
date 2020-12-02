@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import team from "../data/team";
-import Collaborators from "../components/Collaborators";
+import Users from "../components/Users";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Main } from "../assets/styles/typography";
@@ -22,7 +22,7 @@ const Dashboard = () => {
         </Epigraph>
       </BoxEpigraph>
       <TeamContainer>
-        <Collaborators data={team[index].data} />
+        <Users data={team[index].data} />
       </TeamContainer>
       <Footer />
     </Main>

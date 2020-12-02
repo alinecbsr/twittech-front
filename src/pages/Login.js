@@ -27,7 +27,11 @@ function Login() {
             <Epigraph>Log In</Epigraph>
             <Input type="email" placeholder="E-mail" />
             <Input type="password" placeholder="Senha" />
-            <Button>Entrar</Button>
+            <Button>
+            <Link to="/dashboard">
+              <Registrations>Enviar</Registrations>
+              </Link>
+              </Button>
             <BoxLogin>
               <Link to="/recover">
                 <Administer>Esqueci meu usuário / senha?</Administer>

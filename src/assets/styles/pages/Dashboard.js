@@ -36,7 +36,7 @@ export const Cards = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
-  grid-gap: 30px;
+  grid-gap: 10px;
   width: 95%;
   margin: 2rem auto 0 auto;
 `;
@@ -48,7 +48,7 @@ export const Card = styled.article`
   align-items: center;
   background-color: ${colors.neutral};
   color: ${colors.primary};
-  width: 20rem;
+  width: 18rem;
   height: 37rem;
   padding: 2rem;
 `;
