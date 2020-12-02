@@ -19,7 +19,7 @@ import {
   RecoverDescription
 } from "../assets/styles/pages/Login";
 
-function Login() {
+function Recover() {
   return (
     <>
       <Main>
@@ -52,4 +52,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Recover;
