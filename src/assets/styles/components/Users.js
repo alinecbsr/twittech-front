@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Title, Text } from "../typography";
+import { Text } from "../typography";
 import { colors } from "../colors";
 
 

@@ -1,23 +1,26 @@
-import styled from 'styled-components/macro';
-import { Title, Text } from '../typography';
-import { colors } from '../colors';
+import styled from "styled-components/macro";
+
+import { Title, Text, Context } from "../typography";
+import { colors } from "../colors";
 
 export const Epigraph = styled(Title)`
   text-align: center;
-  font-size: 2.5rem;
-  max-width: 53rem;
-  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  width: 80%;
+  max-width: 200px;
+  margin: 0 0 2rem 0;
 
   @media (max-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.2rem;
     max-width: 90%;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
   }
 
   @media (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
     max-width: 80%;
-    line-height: 1.8rem;
+    line-height: 1.3rem;
   }
 `;
 
@@ -106,12 +109,12 @@ export const TeamContainer = styled.div`
   max-width: 1020px;
   width: 100%;
   height: 100%;
-  padding: 0 0 5rem 0;
-  background-color: ${colors.primaryLight};
+  padding: 3rem 0 5rem 0;
+  background-color: ${colors.neutralDarke};
 `;
 
 export const CardContainer = styled.div`
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -122,3 +125,69 @@ display: flex;
   margin: 0;
   background-color: ${colors.primaryLight};
 `;
+
+export const Content = styled(Context)`
+  justify-content: space-between;
+  width: 100%;
+  max-width: 63.75rem;
+  height: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 4rem 0 0 0;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+  }
+`;
+
+export const Box = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 6rem 0 0 0;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+    margin: 2rem 0 0 0;
+    order: 1;
+  }
+`;
+
+export const InputSearch = styled.input`
+  width: 90%;
+  max-width: 19rem;
+  height: 3.75rem;
+  font-size: 1.125rem;
+  padding: 0 0 0 1rem;
+  margin: 0.5rem 0;
+  background: ${colors.primaryDark};
+  color: ${colors.neutralLight};
+  border: none;
+  border-radius: 8px;
+  ::placeholder {
+    color: ${colors.neutralLight};
+  }
+`;
+
+export const ImgDemand = styled.img`
+  width: 24rem;
+  height: 18rem;
+  margin: 8rem 0 0 0;
+
+  @media (max-width: 600px) {
+    margin: 1rem 0 0 0;
+    max-width: 80%;
+  }
+
+  @media (max-width: 420px) {
+    width: 14rem;
+    height: 12rem;
+    margin: 1rem 0 0 0;
+    order: 0;
+  }
+`;
+
