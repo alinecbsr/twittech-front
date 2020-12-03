@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Demand from "../assets/images/demand.svg";
 import { Main } from "../assets/styles/typography";
+import Modal from "../components/Modal";
+
 
 import {
   Box,
@@ -20,6 +22,7 @@ const Dashboard = () => {
 
   return (
     <Main>
+      <Modal/>
       <Header />
         <Content>
             <Box>

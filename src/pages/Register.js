@@ -14,7 +14,7 @@ import {
   Administer,
   LoginBox,
   Return,
-  Registrations
+  Registrations,
 } from "../assets/styles/pages/Login";
 
 function Register() {
@@ -30,10 +30,10 @@ function Register() {
             <Input type="password" placeholder="Senha" />
             <Input type="password" placeholder="Confirme sua senha" />
             <Button>
-            <Link to="/login">
-              <Registrations>Cadastrar</Registrations>
+              <Link to="/login">
+                <Registrations>Cadastrar</Registrations>
               </Link>
-              </Button>
+            </Button>
             <LoginBox>
               <Return src={comeBack} alt="Icone para voltar" />
               <Link to="/login">
