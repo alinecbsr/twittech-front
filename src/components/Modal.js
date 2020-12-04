@@ -19,9 +19,10 @@ import {
   TextButton,
 } from "../assets/styles/components/modal";
 
-export default function Modal() {
+export default function Modal(props) {
+ 
   return (
-    <ModalContext>
+    <ModalContext show={props.show}>
       <ModalContainer>
         <ModalHeader>
           <ModalBox>
@@ -31,7 +32,7 @@ export default function Modal() {
               <Count>12</Count>
             </BoxIcons>
           </ModalBox>
-          <ModalClose>&times;</ModalClose>
+          <ModalClose onClick={props.close}>&times;</ModalClose>
         </ModalHeader>
         <ModalInput type="text" placeholder="Nome" />
         <ModalInput type="email" placeholder="E-mail" />

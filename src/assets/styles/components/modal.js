@@ -3,7 +3,7 @@ import { colors } from "../colors";
 
 export const ModalContext = styled.div`
   color: ${colors.neutralDark};
-  display: flex;
+  display: ${props => props.show || "none"};
   justify-content: center;
   position: fixed;
   z-index: 999;
@@ -26,6 +26,11 @@ export const ModalContainer = styled.div`
   width: 80%;
   max-width: 35.75rem;
   padding: 2rem;
+
+  @media (max-width: 419px) {
+    padding: 1rem;
+
+  }
 `;
 
 export const ModalHeader = styled.div`
@@ -108,7 +113,8 @@ export const ModalClose = styled.span`
 
 export const ModalInput = styled.input`
   width: 100%;
-  height: 3.75rem;
+  min-height: 3.75rem;
+  height: auto;
   font-size: 1.125rem;
   padding: 0 0 0 1rem;
   margin: 0.5rem;
@@ -172,3 +178,4 @@ export const TextButton = styled.a`
     color: ${colors.primaryLight};
   }
 `;
+

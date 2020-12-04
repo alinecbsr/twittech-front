@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <HeaderStyle>
-       <Container>
+      <Container>
         <LogoLink>
           <Logo src={logo} alt="Twittech logo" />
         </LogoLink>

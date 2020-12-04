@@ -191,3 +191,14 @@ export const ImgDemand = styled.img`
   }
 `;
 
+export const Power = styled.img`
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 0 1.5rem;
+
+  @media (max-width: 1023px) {
+    padding: 1rem;
+    display: none;
+  }
+`;
