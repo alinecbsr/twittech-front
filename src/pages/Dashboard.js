@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import power from "../assets/images/power.svg";
@@ -36,10 +36,18 @@ import {
   Power,
 } from "../assets/styles/pages/Dashboard";
 
+import api, { userService } from "../services/api";
+
 const Dashboard = () => {
+  const [users, setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [menuVisibility, setMenuVisibility] = useState(false);
   const [index] = useState(0);
+
+  async function listUser() {
+    const data = await userService.listUser();
+    setUsers(data);
+  }
 
   const openModal = function () {
     setShowModal(true);
@@ -49,7 +57,17 @@ const Dashboard = () => {
     setShowModal(false);
   };
 
+  useEffect(() => {
+    listUser();
+  }, []);
+
   return (
+    //   <>
+    //   <div>Users</div>
+    //   <ul>
+    // {users.length && users.map(u => <li>{u.name}</li>)}
+    //   </ul>
+    //   </>
     <Main>
       <Modal show={showModal} close={closeModal} />
       <HeaderStyle>
@@ -98,8 +116,8 @@ const Dashboard = () => {
         <ImgDemand src={Demand} />
       </Content>
       <TeamContainer>
-        <Users data={team[index].data} />
-      </TeamContainer>
+        <Users data={users} /> 
+      </TeamContainer> 
       <Footer />
     </Main>
   );

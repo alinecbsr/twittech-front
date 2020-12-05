@@ -167,7 +167,7 @@ export const Button = styled.button`
   }
 `;
 
-export const TextButton = styled.a`
+export const TextButton = styled.span`
   color: ${colors.primary};
   text-decoration: none;
   font-weight: 700;

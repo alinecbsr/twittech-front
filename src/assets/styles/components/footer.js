@@ -72,7 +72,7 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const MenuItemLink = styled.a`
+export const MenuItemLink = styled.span`
   padding-right: 8px;
   color: ${colors.neutral};
   text-decoration: none;

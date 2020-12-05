@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <Tag>
       <div className="do-logo">
-        <MenuItemLink href="#home">
+        <MenuItemLink>
           <Logo src={logo} alt="Twittech Logo" />
         </MenuItemLink>
       </div>

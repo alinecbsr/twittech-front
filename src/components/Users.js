@@ -46,18 +46,18 @@ const Users = (props) => {
               <CardBox>
               <BoxIcons>
                 <Icons src={Like} alt="Icone Like"/>
-                <Count>12</Count>
+                <Count>{user.likes.length}</Count>
               </BoxIcons>
-              <Photo src={user.photo} alt={user.name} />
+              <Photo src={`${user.github}.png`} alt={user.name} />
               <Icons src={noFavorite} alt="Icone não Favorito"/>
               </CardBox>
               <Name>{user.name}</Name>
-              <Occupation>{user.occupation}</Occupation>
+              <Occupation>{user.role}</Occupation>
               <Description>{user.description}</Description>
               <TagContainer>
-                <Tags>
+                {/* <Tags>
                 {renderTags(user.tagDescription)}
-                </Tags>
+                </Tags> */}
               </TagContainer>
               <SocialContext>
                 <Social href={user.gitHub} target="_blank">

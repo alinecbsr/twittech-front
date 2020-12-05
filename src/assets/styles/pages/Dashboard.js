@@ -90,7 +90,7 @@ export const SocialContext = styled.div`
   bottom: 0;
 `;
 
-export const Social = styled.a`
+export const Social = styled.span`
   cursor: pointer;
   text-decoration: none;
 `;

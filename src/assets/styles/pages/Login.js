@@ -69,7 +69,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Administer = styled.a`
+export const Administer = styled.span`
   color: ${colors.primary};
   text-decoration: none;
   font-weight: 400;

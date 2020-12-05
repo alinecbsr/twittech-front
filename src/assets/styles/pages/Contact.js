@@ -119,7 +119,7 @@ export const SocialContext = styled.div`
   border-bottom-left-radius: 10px;
 `;
 
-export const Social = styled.a`
+export const Social = styled.span`
   cursor: pointer;
   text-decoration: none;
 `;

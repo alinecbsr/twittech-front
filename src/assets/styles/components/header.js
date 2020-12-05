@@ -48,7 +48,7 @@ export const Container = styled.div`
   }
 `;
 
-export const LogoLink = styled.a`
+export const LogoLink = styled.span`
   width: 25%;
   z-index: 16;
   @media (max-width: 1024px) {
@@ -116,7 +116,7 @@ export const ListItemLogin = styled(ListItem)`
   }
 `;
 
-export const ListLink = styled.a`
+export const ListLink = styled.span`
   text-decoration: none;
   font-size: 1.2rem;
   cursor: pointer;
