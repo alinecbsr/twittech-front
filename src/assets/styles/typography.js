@@ -115,7 +115,7 @@ export const Btn = styled.button`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.span`
   width: 100%;
   margin: 0;
   padding: 0;

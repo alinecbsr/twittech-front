@@ -18,24 +18,24 @@ import {
   Icon,
   TagContainer,
   Tags,
-  Tag,
   TagDescription,
   CardBox,
   BoxIcons,
   Icons,
-  Count
+  Count,
 } from "../assets/styles/components/Users";
 
 const Users = (props) => {
-
   const data = props.data || null;
-  const renderTags = (dataTags) => {
-    return dataTags.map((t) => (
-        <Tag key={Math.random()}>
-          <TagDescription>{t}</TagDescription>
-        </Tag>
-      ))
-  }
+  const renderSkills = (skills) => {
+    if(skills && skills.length){
+      return skills.map((s) => (
+        <TagDescription key={s._id}>
+          <TagDescription>{s.name}</TagDescription>
+        </TagDescription>
+      ));
+    }
+  };
 
   return (
     <CardContainer>
@@ -44,26 +44,26 @@ const Users = (props) => {
           data.map((user) => (
             <Card key={Math.random()}>
               <CardBox>
-              <BoxIcons>
-                <Icons src={Like} alt="Icone Like"/>
-                <Count>{user.likes.length}</Count>
-              </BoxIcons>
-              <Photo src={`${user.github}.png`} alt={user.name} />
-              <Icons src={noFavorite} alt="Icone não Favorito"/>
+                <BoxIcons>
+                  <Icons src={Like} alt="Icone Like" />
+                  <Count>{user.likes.length}</Count>
+                </BoxIcons>
+                <Photo src={`${user.github}.png`} alt={user.name} />
+                <Icons src={noFavorite} alt="Icone não Favorito" />
               </CardBox>
               <Name>{user.name}</Name>
               <Occupation>{user.role}</Occupation>
               <Description>{user.description}</Description>
               <TagContainer>
-                {/* <Tags>
-                {renderTags(user.tagDescription)}
-                </Tags> */}
+                <Tags>
+                {renderSkills(user.skills)}
+                </Tags>
               </TagContainer>
               <SocialContext>
-                <Social href={user.gitHub} target="_blank">
+                <Social href={user.github} target="_blank">
                   <Icon src={GitHub} alt="Icone GitHub" />
                 </Social>
-                <Social href={user.linkedIn} target="_blank">
+                <Social href={user.linkedin} target="_blank">
                   <Icon src={Linkedin} alt="Icone LinkedIn" />
                 </Social>
                 <Social href={user.linkedIn} target="_blank">

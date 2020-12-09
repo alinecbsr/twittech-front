@@ -99,6 +99,8 @@ export const NavList = styled.ul`
     display: ${props => (props.menuVisibility ? 'flex' : 'none')};
     flex-direction: column;
     text-align: center;
+  margin: 2rem 0 0 0;
+
   }
 `;
 
@@ -110,7 +112,25 @@ export const ListItem = styled.li`
   list-style: none;
 `;
 
-export const ListItemLogin = styled(ListItem)`
+export const ListItemLogin = styled.span`
+  font-family: ${fonts.base};
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  list-style: none;
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+`;
+
+export const ListItemMenu = styled.span`
+  font-family: ${fonts.base};
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  list-style: none;
+
   @media (min-width: 1025px) {
     display: none;
   }

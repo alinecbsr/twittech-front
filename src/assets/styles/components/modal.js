@@ -66,7 +66,7 @@ export const Icons = styled.img`
   margin: 0 1rem;
 `;
 
-export const Count = styled.p`
+export const Count = styled.span`
   color: ${colors.neutralLight};
   font-size: 0.875rem;
   line-height: 1rem;
