@@ -20,7 +20,7 @@ import { useHistory } from "react-router-dom";
 import { userService } from "../services/api";
 
 function Login() {
-  const [user, setUser] = useState("alinecbsr@gmail.com");
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
 

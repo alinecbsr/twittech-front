@@ -32,7 +32,6 @@
 <h4>Front-end</h4>
 <ul>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript" target="_blank">JavaScript</a></li>
-  <li><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></li>
   <li><a href="https://reactjs.org/" target="_blank">ReactJs</a></li>
   <li><a href="https://pt-br.reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a></li>
   <li><a href="https://pt-br.reactjs.org/docs/react-dom.html" target="_blank">React DOM</a></li>
@@ -41,20 +40,22 @@
   <li><a href="https://www.npmjs.com/package/styled-normalize" target="_blank">Styled Normalize</a></li>
 </ul>
 <br/>
- <h3 align="center">🛠 Em construção...</h3>
 <br/>
 <br/>
 <h4>Back-end</h4>
+<li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript" target="_blank">JavaScript</a></li>
+  <li><a href="https://nodejs.org/en/" target="_blank">NodeJS</a></li>
+  <li><a href="https://expressjs.com/pt-br/" target="_blank">Express</a></li>
+  <li><a href="https://www.mongodb.com/1" target="_blank">Mongo</a></li>
+  <li><a href="https://mongoosejs.com/docs/models.html" target="_blank">Mongoose</a></li>
+  <li><a href="https://jwt.io/" target="_blank">JWT</a></li>
+  <li><a href="https://pt.wikipedia.org/wiki/MVC" target="_blank">MVC</a></li>
+  <li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
 <br/>
- <h3 align="center">🛠 Em construção...</h3>
 <br/>
 <br/>
 <br/>
-
 ## :computer: Projeto
-<br/>
-<br/>
- <h3 align="center">🛠 Em construção...</h3>
 <br/>
 <br/>
 <p align="center">
