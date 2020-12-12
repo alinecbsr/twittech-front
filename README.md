@@ -21,9 +21,6 @@
 <h4 align="center">🌎  Nosso foco é estimular a colaboração e mentoria </h4>
 <br/>
 <br/>
-<h3 align="center">🛠 Em construção...</h3>
-<br/>
-<br/>
 
 ## :floppy_disk: Tecnologias
 <br/>
@@ -40,8 +37,6 @@
   <li><a href="https://www.npmjs.com/package/styled-normalize" target="_blank">Styled Normalize</a></li>
 </ul>
 <br/>
-<br/>
-<br/>
 <h4>Back-end</h4>
 <li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript" target="_blank">JavaScript</a></li>
   <li><a href="https://nodejs.org/en/" target="_blank">NodeJS</a></li>
@@ -55,6 +50,7 @@
 <br/>
 <br/>
 <br/>
+
 ## :computer: Projeto
 <br/>
 <br/>
@@ -67,6 +63,52 @@
 ## :purple_heart: Desenvolvimento
 <br/>
 <br/>
- <h3 align="center">🛠 Em construção...</h3>
-<br/>
-<br/>
+
+<table>
+  <tr>
+    <td align="center" style="border: none;">
+      <a href="https://github.com/alinecbsr">
+        <img style="border-radius: 50px;" src="https://avatars0.githubusercontent.com/u/48742480?s=460&u=d21eae3038217c687d478969e8bf7b1bee1b9c3e&v=4" width="70px;" alt="Aline Rosa"/>
+        <br />
+        <sub>
+          <b>Aline Rosa</b>
+        </sub>
+      </a>
+      <br />
+      <p><scan title="Code">💻</scan>|<scan title="Documentation">🎨</scan>|<scan title="Bugs">🐛</scan></p>
+    </td>
+        <td align="center" style="border: none;">
+      <a href="https://github.com/leandrospigolon">
+        <img style="border-radius: 50px;" src="https://avatars1.githubusercontent.com/u/50602175?s=460&u=e04af072262ab2ce3912dffe3e290268cc2bf307&v=4" width="70px;" alt="Leandro"/>
+        <br />
+        <sub>
+          <b>Leandro Spigolon</b>
+        </sub>
+      </a>
+      <br />
+      <p><scan title="Code">💻</scan></p>
+    </td>
+    <td align="center" style="border: none;">
+      <a href="https://github.com/maxwelljames91">
+        <img style="border-radius: 50px;" src="https://avatars0.githubusercontent.com/u/55861012?s=460&u=eb50b0884ca15613cb13679323e5cdedb920b227&v=4" width="70px;" alt="Maxwell"/>
+        <br />
+        <sub>
+          <b>Maxwell James</b>
+        </sub>
+      </a>
+      <br />
+      <p><scan title="Code">💻</scan></p>
+    </td>
+    <td align="center" style="border: none;">
+      <a href="https://github.com/Ramonuriel13">
+        <img style="border-radius: 50px;" src="https://avatars3.githubusercontent.com/u/48573194?s=400&u=17a9f93b0db2d3cccee6e5cd0afddac91e05bf6d&v=4" width="70px;" alt="Ramon"/>
+        <br />
+        <sub>
+          <b>Ramon Uriel</b>
+        </sub>
+      </a>
+      <br />
+      <p><scan title="Code">💻</scan></p>
+    </td>
+  </tr>
+</table>
