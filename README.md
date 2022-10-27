@@ -77,38 +77,5 @@
       <br />
       <p><scan title="Code">💻</scan>|<scan title="Documentation">🎨</scan>|<scan title="Bugs">🐛</scan></p>
     </td>
-        <td align="center" style="border: none;">
-      <a href="https://github.com/leandrospigolon">
-        <img style="border-radius: 50px;" src="https://avatars1.githubusercontent.com/u/50602175?s=460&u=e04af072262ab2ce3912dffe3e290268cc2bf307&v=4" width="70px;" alt="Leandro"/>
-        <br />
-        <sub>
-          <b>Leandro Spigolon</b>
-        </sub>
-      </a>
-      <br />
-      <p><scan title="Code">💻</scan></p>
-    </td>
-    <td align="center" style="border: none;">
-      <a href="https://github.com/maxwelljames91">
-        <img style="border-radius: 50px;" src="https://avatars0.githubusercontent.com/u/55861012?s=460&u=eb50b0884ca15613cb13679323e5cdedb920b227&v=4" width="70px;" alt="Maxwell"/>
-        <br />
-        <sub>
-          <b>Maxwell James</b>
-        </sub>
-      </a>
-      <br />
-      <p><scan title="Code">💻</scan></p>
-    </td>
-    <td align="center" style="border: none;">
-      <a href="https://github.com/Ramonuriel13">
-        <img style="border-radius: 50px;" src="https://avatars3.githubusercontent.com/u/48573194?s=400&u=17a9f93b0db2d3cccee6e5cd0afddac91e05bf6d&v=4" width="70px;" alt="Ramon"/>
-        <br />
-        <sub>
-          <b>Ramon Uriel</b>
-        </sub>
-      </a>
-      <br />
-      <p><scan title="Code">💻</scan></p>
-    </td>
   </tr>
 </table>
